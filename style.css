@@ -11,17 +11,31 @@ body {
     color: #fff;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding: 0;
 }
 
+p {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
 nav {
-    background-color: #3333;
+    background-color: #25232233;
     border-radius: 2rem;
 }
 
 nav > ul {
     list-style-type: none;
     font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -31,12 +45,60 @@ nav > ul > li {
 }
 
 nav ul a {
-    color: #EDEFEE;
+    color: #365545;
     text-decoration: none;
 }
 
 nav ul a:hover {
-    background-color: #304840;;
+    background-color: #304840;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+section {
+    display: flex;
+    gap: 2rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+article a:hover {
+    color: #dbe48c;
+}
+
+article a:visited {
+    color: violet;
+}
+
+article a:active {
+    color: #EDEFEE;
+    background-color: #25232233;
+}
+
+main article {
+    flex: 1;
+    background-color: #25232233;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main article:hover{
+    background-color: #304840;
+    color: #dbe48c;
+    box-shadow: 0 5px 15px rgba(64, 81, 74, 0.8);
+}
+
+main article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    width: 100%;
+    max-height: 15rem;
 }
 
 #art1 {
@@ -45,17 +107,43 @@ nav ul a:hover {
     background-position: center;
     color: #304840;
     border-radius: 2rem;
-    margin: 2rem;
     padding: 2rem;
     text-align: left;
-    text-shadow: 1px 1px 1px #304840;
+    
 }
 
-#art1 h1 {
-    margin-top: 0rem;
-    font-size: 2rem; 
+#art1 p{
+    width: 70%;   
 }
 
 #art1 p {
     max-width: 100%;
+}
+
+footer {
+    margin-top: 2rem;
+    margin: 2rem;
+    display: flex;
+}
+
+footer img {
+    width: 100%;
+    max-width: 15rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+footer div{
+    flex: 1 1 0;
+}
+
+footer p {
+    border-top: #333333;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    color: #304840;
 }
